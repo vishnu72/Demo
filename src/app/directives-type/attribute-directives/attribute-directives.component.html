@@ -1,0 +1,34 @@
+<p [class.paragraph]="flag">This is Paragraph.</p>
+
+<p [style.border]="'6px solid red'">This is inline style .</p>
+
+<p [ngStyle]="{ 'font-weight': applyStyle ? 'bold' : 'normal' }">
+  This is inline style condition bas.
+</p>
+<button (click)="applyStyle = !applyStyle">Click Me</button>
+
+<p [ngClass]="getClass()">This is function use class biding.</p>
+<button (click)="setClassFlag = !setClassFlag">Click Me</button>
+
+<p [ngStyle]="getStyle()">This is using function bash style collection.</p>
+<button (click)="setStyleFlag = !setStyleFlag">Click Me</button>
+
+<p [ngClass]="setTextClass ? 'text-primary ' : 'text-danger paragraph'">
+  This is conditions bas class biding.
+</p>
+<button (click)="setTextClass = !setTextClass">Click Me</button>
+
+<hr />
+<h4>NgClass with multiple conditions</h4>
+<ul *ngFor="let person of people">
+  <li
+    [ngClass]="{
+      'text-success': person.country === 'UK',
+      'text-primary': person.country === 'USA',
+      'text-danger': person.country === 'HK' || person.country === 'UAE'
+    }"
+  >
+    {{ person.name }} ({{ person.country }})
+  </li>
+</ul>
+<hr />

@@ -1,0 +1,30 @@
+.label {
+    color: black;
+    padding: 8px;
+    font-family: Arial;
+    margin: 0 2px;
+  }
+  .success {background-color: #04AA6D;} /* Green */
+  .info {background-color: #2196F3;} /* Blue */
+  .warning {background-color: #ff9800;} /* Orange */
+  .danger {background-color: #f44336;} /* Red */ 
+  .other {background-color: #e7e7e7; color: black;} /* Gray */ 
+
+  .custom-control {
+    margin-bottom: 5px;
+  }
+  
+  .custom-control label {
+    font-weight: 400;
+  }
+
+  input[type="radio"] {
+    &:checked {
+      + label {
+        border-color: blue;
+        background-color: blue;
+        color: white;
+        margin: 0 2px;
+      }
+    }
+  }

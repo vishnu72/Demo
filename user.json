@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "FirstName": "vishnu ",
+      "LastName": "tandel",
+      "Email": "sfgag",
+      "ContactNumber": "2536423",
+      "Date":"Mon Sep 12 2022 11:48:15 GMT+0530 (India Standard Time)",
+      "id": 5
+    },
+    {
+      "FirstName": "zankhu",
+      "LastName": "tandel",
+      "Email": "sg",
+      "ContactNumber": "457658",
+      "Date":"Mon Sep 13 2022 11:48:15 GMT+0530 (India Standard Time)",
+      "id": 6
+    },
+    {
+      "FirstName": "neha",
+      "LastName": "patel",
+      "Email": "w@rr.com",
+      "ContactNumber": "55",
+      "id": 7,
+      "Date":"Mon Sep 14 2022 11:48:15 GMT+0530 (India Standard Time)"
+    }
+  ]
+}
