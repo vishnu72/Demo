@@ -19,7 +19,6 @@ export class PaginationComponent {
    pagesCnt: any;
 
   constructor() {
-    debugger
   }
 
   ngOnChanges() {

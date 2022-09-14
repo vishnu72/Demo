@@ -14,15 +14,23 @@ import { FormGroup, FormControl, FormArray } from '@angular/forms';
 // Configuration of application wide lazy & eagerly loaded routes.
 const APP_ROUTES: Routes = [
   {
-    path: '', 
-    redirectTo: 'directives', pathMatch:'full'
+    path: '',
+    redirectTo: 'directives', pathMatch: 'full'
   },
   {
     path: 'directives',
     loadChildren: () => import('./directives-type/directives-type.module').then(m => m.DirectivesTypeModule),
     data: {
       // title: 'Employee',
-      breadcrumbs: 'employee'
+      breadcrumbs: 'directives'
+    }
+  },
+  {
+    path: 'pipes',
+    loadChildren: () => import('./pipes-example/pipes-example.module').then(m => m.PipesExampleModule),
+    data: {
+      // title: 'Employee',
+      breadcrumbs: 'pipes'
     }
   },
 ];

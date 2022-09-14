@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row mb-2">
+    <!-- <div class="col-md-6">
+      <input type="text" class="form-control" [(ngModel)]="filteredString" />
+    </div> -->
+    <div class="col-6">
+      <button (click)="onAddUser()">Add User</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 ">
+      <input type="text" class="form-control" [(ngModel)]="filteredString" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div *ngFor="let user of users | search: filteredString" class="my-3">
+        <div>Name: {{ user.name | shorten: 10 }}</div>
+        <div>
+          Joined Date: {{ user.joinedDate | date: "fullDate" | uppercase }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
